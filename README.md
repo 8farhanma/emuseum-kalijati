@@ -1,6 +1,6 @@
 # Rumah Sejarah Kalijati
 
-![Rumah Sejarah Kalijati Logo](public/WT-Museum/images/logo/logomuseumkalijati.png)
+![Rumah Sejarah Kalijati Logo](public/WT-Museum/images/Logo/logomuseumkalijati.png)
 
 ## Tentang Proyek
 
