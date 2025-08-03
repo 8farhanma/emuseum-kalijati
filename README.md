@@ -1,7 +1,5 @@
 # Rumah Sejarah Kalijati
 
-![Rumah Sejarah Kalijati Logo](public/WT-Museum/images/Logo/logomuseumkalijati.png)
-
 ## Tentang Proyek
 
 Rumah Sejarah Kalijati adalah sebuah platform digital yang didedikasikan untuk melestarikan dan mempromosikan warisan sejarah di Kalijati. Aplikasi ini dibangun dengan Laravel, menyediakan akses mudah bagi pengunjung untuk mengeksplorasi koleksi bersejarah, informasi kunjungan, dan publikasi terkait sejarah Kalijati.
