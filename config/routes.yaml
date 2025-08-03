@@ -1,0 +1,4 @@
+dosen_insert:
+  path: /dosen/insert
+  methods: [GET, POST]
+  controller: App\Controller\DosenController::insert
