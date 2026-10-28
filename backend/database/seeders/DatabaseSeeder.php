@@ -20,5 +20,13 @@ class DatabaseSeeder extends Seeder
             ProfileSeeder::class,
             FaqSeeder::class,
         ]);
+
+        // Sample content: local/testing only. Visits and reviews are never seeded.
+        if (! app()->isProduction()) {
+            $this->call([
+                ArtifactSeeder::class,
+                PublicationSeeder::class,
+            ]);
+        }
     }
 }
