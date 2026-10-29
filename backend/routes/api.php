@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\AuthController;
+use App\Http\Controllers\Api\V1\FaqController;
 use App\Http\Controllers\Api\V1\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +16,5 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::get('profile', [ProfileController::class, 'show']);
+    Route::get('faqs', [FaqController::class, 'index']);
 });
