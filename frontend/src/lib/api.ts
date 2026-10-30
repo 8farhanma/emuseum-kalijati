@@ -1,3 +1,4 @@
+import { cacheLife } from "next/cache";
 import type { ApiResponse, Faq } from "@/types/api";
 
 function getApiBaseUrl(): string {
@@ -13,7 +14,6 @@ function getApiBaseUrl(): string {
 async function apiGet<T>(path: string): Promise<T> {
     const response = await fetch(`${getApiBaseUrl()}${path}`, {
         headers: { Accept: "application/json" },
-        next: { revalidate: 3600 },
     });
 
     if (!response.ok) {
@@ -27,6 +27,8 @@ async function apiGet<T>(path: string): Promise<T> {
     return body.data;
 }
 
-export function getFaqs(): Promise<Faq[]> {
+export async function getFaqs(): Promise<Faq[]> {
+    "use cache";
+    cacheLife("hours");
     return apiGet<Faq[]>("/faqs");
 }
